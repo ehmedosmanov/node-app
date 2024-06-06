@@ -1,7 +1,7 @@
 const isPalindrome = str => {
-  return str === str.split('').reverse().join('')
+  const res = str.split('').reverse().join('')
+  return str === res
 }
-
 
 function f(n) {
   if (n === 0) {
@@ -13,7 +13,7 @@ function f(n) {
   return f(n - 1) + f(n - 2)
 }
 
-console.log(f(15))
+console.log(f(5))
 
 module.exports = {
   f,
